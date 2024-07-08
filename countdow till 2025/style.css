@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(232, 232, 249);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.content {
+    position: relative;
+    max-width: 700px;
+}
+
+.content h1 {
+    font-size: 3.5em;
+    color: #514b4b;
+    transition: 0.5s;
+}
+
+.content h1 span {
+    color: rgb(178, 112, 73);
+}
+
+
+.countdown-container {
+    text-align: center;
+}
+
+.countdown-timer {
+    font-size: 36px;
+    font-weight: bold;
+    color: #8d7d7d;
+    margin-bottom: 20px;
+}
+
+.countdown-label {
+    font-size: 18px;
+    color: #785536;
+}
+
+.dayNight {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #fefefe;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+}
+.dayNight ion-icon:nth-child(2),.banner.night .dayNight ion-icon:nth-child(1){
+     display: none;
+}
+
+.banner.night .dayNight ion-icon:nth-child(2){
+    display:block;
+}
+
+.banner.night{
+    background: #333;
+}
